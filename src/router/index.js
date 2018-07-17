@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
+import Posts from '@/components/Posts'
 import PostsManager from '@/components/PostsManager'
 import Auth from '@okta/okta-vue'
 
@@ -20,6 +21,11 @@ let router = new Router({
       path: '/',
       name: 'Hello',
       component: Hello
+    },
+    {
+      path: '/posts',
+      name: 'Posts',
+      component: Posts
     },
     {
       path: '/implicit/callback',
